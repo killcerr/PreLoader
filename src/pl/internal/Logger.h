@@ -19,7 +19,7 @@
 
 namespace fs = std::filesystem;
 
-inline bool shouldLogColor = true;
+inline bool shouldLogColor = pl::utils::isStdoutSupportAnsi();
 
 inline void loadLoggerConfig() {
     try {
